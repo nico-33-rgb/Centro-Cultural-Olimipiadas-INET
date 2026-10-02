@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Preinscribirse - Centro Cultural CO</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+</head>
+<body id="body-preinscripcion">
+
+  <header>
+      <!-- Barra de Navegación -->
+      <nav class="menu" id="menu">
+        <img src="img/logo.png" alt="Logo Centro Cultural CO" id="logo" />
+        <h1>Centro Cultural CO</h1>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navegacion">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav" id="navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="talleres.html">Talleres</a></li>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="preinscripcion.html">Preinscribirse</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    
+    <section id="formulario-preinscripcion">
+      <h1>Formulario de Preinscripción</h1>
+      <p>
+        Completá el siguiente formulario para inscribirte
+        a uno de nuestros talleres.
+      </p>
+      <form id="formularioPreinscripcion" novalidate>
+        <label>Nombre completo</label>
+        <br>
+        <input type="text" placeholder="Ingresá tu nombre completo" id="nombrePreinscripcion">
+        <br>
+        <label>DNI</label>
+        <br>
+        <input type="number" placeholder="Ingresá tu DNI" id="dniPreinscripcion">
+        <br>
+        <label>Correo electrónico</label>
+        <br>
+        <input type="email" placeholder="ejemplo@gmail.com" id="emailPreinscripcion">
+        <br>
+        <label>Teléfono</label>
+        <br>
+        <input type="tel" placeholder="Ingresá tu número" id="telefonoPreinscripcion">
+        <br>
+        <label>Fecha de nacimiento</label>
+        <br>
+        <input type="date" id="fechaNacimientoPreinscripcion">
+        <br>
+        <label>¿A qué taller querés inscribirte?</label>
+        <br>
+        <select id="actividadPreinscripcion">
+          <option selected disabled value="">Seleccioná un taller</option>
+          <option value="musica">Música</option>
+          <option value="pintura">Pintura</option>
+          <option value="fotografia">Fotografía</option>
+          <option value="dibujo">Dibujo</option>
+          <option value="cocina">Cocina</option>
+          <option value="diseñografico">Diseño gráfico</option>
+          <option value="ediciondevideo">Edición de video</option>
+          <option value="ceramica">Cerámica</option>
+        </select>
+        <br><br>
+        <p id="textoEstadoPreinscripcion"></p>
+        <button type="submit">Preinscribirse</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+      <!-- Información de contacto -->
+      <div>
+        <h1>Contacto</h1>
+        <!-- Contacto del centro cultural (correo, telefono, ubicación) -->
+        <ul>
+          <li><i class="fa-solid fa-at"></i>centroculturalco@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i>+54 297 555-0187 </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>Av. Costanera 1234, Caleta Olivia, Santa Cruz, Argentina
+          </li>
+        </ul>
+      </div>
+      <!-- Navegación por el sitio -->
+      <div>
+        <h1>Navegación</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="talleres.html">Talleres</a></li>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="preinscripcion.html">Preinscribirse</a></li>
+        </ul>
+      </div>
+
+      <p>Centro Cultural © 2026</p>
+    </footer>
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
